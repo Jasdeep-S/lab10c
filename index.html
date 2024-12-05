@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab10c - Jasdeep Sidhu</title>
+  <script src="https://unpkg.com/vue@2"></script>
+  <style>
+    body {
+      background: lightblue;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 50px;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1>{{ title }}</h1>
+    <div class="container">
+        <p>{{ text1 }}</p>
+        <p>{{ text2 }}</p>
+        <p>{{ text3 }}</p>
+        <p>{{ text4 }}</p>
+    </div>
+
+  </div>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        title: 'Problem 3: My First Vue Webpage',
+        text1: 'Hey there! This webpage was created using a JavaScript framework called Vue.js',
+        text2: 'To install Vue, I simply used a CDN link from unpkg.com, making the installation process very simple!'        ,
+        text3: 'Next, I created an HTML file, added a <script> tag for Vue, and created an instance of Vue using new Vue({}). I then used some css to make the webpage aesthetically pleasing',
+        text4: 'While making this webpage, one challenge I faced was in data binding, as I was initally using only one curly bracket instead of two. I was able to overcome this challenge by simply looking at Vue.js documentation!',
+      }
+    });
+  </script>
+</body>
+</html>
